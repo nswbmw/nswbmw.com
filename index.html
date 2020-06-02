@@ -1,12 +1,14 @@
-<html lang="en">
+<!doctype html>
+<html ⚡>
 <head>
-  <title>nswbmw</title>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  <title>nswbmw</title>
+  <link rel="canonical" href="https://www.nswbmw.com/">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
   <meta name="author" content="nswbmw"/>
   <meta name="description" content="nswbmw's blog"/>
-
   <meta property="og:title" content="nswbmw"/>
   <meta property="og:description" content="nswbmw's blog"/>
   <meta property="og:type" content="website">
@@ -14,7 +16,9 @@
   <meta property="og:url" content="http://nswbmw.com"/>
   <meta property="og:site_name" content="http://nswbmw.com"/>
 
-  <style type="text/css">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <style amp-custom>
     * {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
@@ -22,15 +26,14 @@
     html {
       font: 300 16px/1.8 -apple-system,PingFang SC,Verdana,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;
       font-size: 62.5%;
+      color: #333;
       background: #fff;
       text-rendering: optimizelegibility;
       -webkit-text-size-adjust: 100%;
       -webkit-font-smoothing: antialiased;
     }
-    body,html {
-      color: #333;
-    }
     body {
+      color: #333;
       margin: 0;
       padding: 0;
       text-align: center;
@@ -83,7 +86,6 @@
       border-radius: 50%;
       background-repeat: no-repeat;
       background-position: 50%;
-      background-image: url(data:image/png;base64,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);
     }
     .header .desc {
       font-size: 15px;
@@ -113,7 +115,7 @@
     .contact li:last-child {
       padding-right: 25px;
     }
-    .contact li span {
+    .contact li amp-img {
       display: block;
       width: 24px;
       height: 24px;
@@ -124,23 +126,8 @@
       -o-transition: opacity .5s;
       transition: opacity .5s;
     }
-    .contact li span:hover {
+    .contact li amp-img:hover {
       opacity: 1;
-    }
-    .contact li span.github {
-      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACNElEQVRIS7VV/V3bMBDVkwYgG9RMUGEP0DBB6QRNJijZIEyANyBM0DABYQAp6gSECUgHkK6/c6X85I+EkFL9ZVvne+++3kEcOFrrQkr5A8BYCKEHTFdCiKX3/t45tx1yhaGPWuuRlPIWwOQQgXRHROy8ttbedO17AFprLaV8BDA6xnnHxnnvL/NoWgD/6DxhtUB2ADEtz4k5Ef0CUAghzt6KhIhehBBbAJ+jrTPGXPDzDqCqqoUQ4ntyZoxp7sqynACoicgB2BDRBoAmIk5hAeDaGLPk6JVS66wuM2tt3TjRWo+VUo850wTwFvv8vqoqygsfQjhvALrs+dt7AboRsA8imqY0cNifMjYPxpir97CP6ez5wRCy9/7COedOAOB63eVpYoAPyX+sZaGUes6JfTTASCn1+j8BetkYrIEQ4hv39gk1uAZw24ogtumuf+PlyhhzeQJAq4uI6CnNAbP9mjskooW1dnoMCMuMUoq7p9XaRDRLAHzxM8rAjIjmrCvxvQ4huPV6/ZSDsVO2AcD/cnv21Nd7/3eS45CsAHyJC2QqpeT3RrxYzKy1LHy7E1m3OqaTgRtr7TxXUxYr3lBnPOIhhKVSikWOBa0eKnpZlolUN5O/vfcF74XWPojKeccbKoTAi+PgNO8BYOfj9G9voyWQSIkBtkT0wNLbpTkA0HLO9vt2Mq/NRVaDJp+HALglQwgT59ymNwf7WjFGw12y2FMDjkqHEObOOa5f7wxGcEzvH2vzBwsFOfg4F5epAAAAAElFTkSuQmCC);
-    }
-    .contact li span.twitter {
-      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACIUlEQVRIS7VW0XHbMAwFqAGaEdwJwlIDNJmg7gR1NmgniD1BnQniTFBnA2cAMewETTewByDReyqpYyVKiq8XfulIAg94AB7FNLG01ouqqj4R0RURLYhIx+uOiF6I6OC9f3TO4bu4uLQLx0qpW2ZeTQWQzkRkF0LYlIAGAHVdL0XknpkvXuM8Azky803TNPvc7h8AY8yKme/Pcdy/KyI31tpd2u8AEDkR/fgf55nt55RJCxA5fz6XlrFgROQYQviAmrQAdV0jpS8Zn0/M/HHEwcl7v3TOHXBujPlKRMj+wMy3mc1D0zQrjq34K3fmvb9WSi1K9cBZcp7bGGPWzAywd2nfe/+eEQEzf+8DwInWWiultikbEfltrcU8DFafBVwQkW9c1zXaCsPULRHZWGvXaSMCgYajtXY7AiCF/Udk4Jj5sgdwF0JYO+eOr+mqEs3RziGDAXK/l+dApuZnDABthmJCc2ZXif9kVKQoFmgTQtjO0TRBD4r8s1jkxF9syck6GGPQ/2Mz0xZ50KbZwMH5Xd5ROV9T1HRtWkjxJCLoLGj8vq+OMNRaX1RVBVFE646udtBwWogEMrDz3j/lGh/nAZIC1Z2T879SESPCy4WO6cZ8tnWmL0CvdCd2MYu3k+sUzJs+OAkkPjyQ73PpOqE2k09mJm6oCcSueyNmavLgvYd2Df4uin8VOZBSasnMVyKC96EVxXZCmV9E5BBC2E/9tvwBNiwsJKfCklUAAAAASUVORK5CYII=);
-    }
-    .contact li span.zhihu {
-      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAJXSURBVEiJpVU9VttAGJz5PoqUpnSFcwLvk5t0iBNEnCDiBMAJbJ8gvgHmAoF06SIOYGW5galcxm4oeG/3S4HspwjLYJhGTzu7M/vz7SyxA865nqp+BZADcHXOzOYAbmOM195736bBNmERGZLMd02ghiKEMPbeF68aOOeciPwm2Xmj+AZmdlaW5bTepvWfwWCQVeKf9hUHAJJZt9s9XCwWv14YOOccyZv3itdMvnS73YfFYuEBQNaEiEya22Jm9wB+vsPnu3OuAwAHAJAkSU7yuNkrxpiJSEH+f1SV8bLRvUfyqFpFR1UnAHJWBp5kvyFyV5Zl2jRNkqSIMY6aFZMkyYjksN4WQjikc66jqn+bQmZ2BsCRPJ/NZhwMBlYbeCIio/WqzWxczXzYkDkVNC5QDX2S5y3cm2BmTkQk3UaSvPiIeIX0YAd5GkLYHGQI4QQAVHUv410G56oKM7t3zi1VdQgAZtbby4BkW1Cl1fdeVXtmdkiy3yzZV+AlhNCahAAQY5yGEJYxxgzAah91AF689/Pq4ryAmd0BmIvIjYikIYS0RhcAVmY2jjEWLZO7XUfFZAu/ijHmInJBskPySlV7ACAi356enn48Pj72AZiIHG9Jgmvv/XKzoUmSzNdX3cyWAC4BHJEctSy/MDPXFushhM/e+/mmimKMmar+AZ6zBMBVi/AaaduBm9ml934O1NLUe++rePgorsuy3Gy51JnqNTrF/tUC4DmTZrNZXm/b9SZPt0V4i/BDjDF/05vcMEpFJAOQrQughhWAWzMrmu/wu+Geke4z5h9zWAftXLIqEAAAAABJRU5ErkJggg==);
-    }
-    .contact li span.netease {
-      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAABSlBMVEUAAAAzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzM1NTUzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMrLCwzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzP///8AAAA0NDQSEhI3NzcfHyAVFRU1NTUbHBwPDw8nJiYJCQni398xMTEjICEMDAy8uLhRTU0jJCQdHh4bGRn49vbZ1dbV0dHSz89taGljX19ZVVVUUFAvLy8rLSwnKCgYGhoXFxcLCgr6+Pjn4+Pc2trIxMSopKSemZmVkZJxbG1WUlP8+/vKx8e4s7O0r7CsqKiUj4+QjIyEgIB4dHVrZGVmYmNNSUpKR0c+PDw5NTU0MDArKioWExMIBwfw7u/w7u7v7u7Jx8fBvLyvqqukoKCalZWLhoZ9eHhgW1vlaoEgAAAAI3RSTlMA89idaBi8sHx1+ufTy6xROTYtHx0L/evfp5mMiG5hXlhHKkRprUIAAAGzSURBVCjPVZFXd+IwEIVlIAGy6dls73PlXrANNr3X0NJ7397+/+sKCCdnv7e5nzQjnWEPLMReRiQpshp7Oqvn8aslEhh1vfUsuvWYf5Bogmra52W7ufRunieJZMO0tEAtAL2KRolZvibONvzqz1OniF4BhbZL76f9Ra7pv4D9O+xmldG4QUSTJ6ySYd99B04CvocM5+GVEIuMbYkBTh8pmTvlPHIHo1aoCvOJJUhuZZC75uYPTEl7pjBv2CJR+wC/uTJAZ4CvZ3kUsmLKCntBjZsOrq0roMp7kHkRR75MT5hE5hgpzTpHse0MccgvkbNvSRKiWUFeU8pI+XyEHT+bQqUpRIS0C3y2tdscBpUUji0rjZIiWsWp7nWR0fW/EOx4gbhRNcVHYiTfD7HPZSVzmD7RAuUCX7w6Jdk2UVDbxRl3Q0VXauH9Ho7aMi0w9poMvwSUfKdpKtxLoxvaFGWC5+Q6f0T702qmPOyge6Or0vZEbJJRc8Z5zOjbukrrbMpHsSfFK/W/FdPHl5am0hp7YHNlsm6rldUtk4zlDfZIbJnIdWsuUeQt+5+NZDQejybW5/U/WJVWXd+6PNwAAAAASUVORK5CYII=);
-    }
-    .contact li span.email {
-      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAABNVBMVEUAAABJUFZJUFZJUFZIT1VHT1RKUVdJUFZJUFZJUFZJUFZHTlRFTFJJUFZJUFZJUFZHTlRFTFJJUFZJUFZHT1QxOkAwOT9DTFE2PkRFTVIuNj42P0VJUFY/RkxJUFZJUFZJUFYyO0FJUFZJUFY3P0VJUFZGTlRJUFZNU1j///9JUFYwOUAtNjxpbnJwdXmtsLE2PkW+v8EyOkEdJy9fZmpUW2FOVVoKFh8hKzMQHCQAAAH9/v7LzM6nqqxjaG05QEcpMjklLzUWISn19fXx8fHY2dq9v8G4urxKUVdGTVL7+/v5+fnp6urh4uTb29zR0tPP0NHExcfCxMWztriws7Wfo6VXXWMUHyepra+ipaiZnZ+QlJeDh4t8gYV7gINzeHxrcHRYXWNSWV48REsdJS0AAgoAAQrMXqxuAAAAKXRSTlMA9amFQCgG6uDMnW+7sHtbT0U2FQz39/bz4uDf2NfU07KblpJ0YVwgHC7+6iYAAAFKSURBVCjPXc9nU8JAEIDhpfciYO/dTUAipENIQu+CgNi7/v+f4CVANDxfbubem71ZWHBHnYFAxLUCdqEdas4f9YLFE6AIK7mtKQxtkzubv6fZjE2Jnv20lcUljbUUuT/5wMqofmWpj6vIHgJ4N27xWpbE/JxYlm+wRCchznCd9sOU4SkTr0qPnQKbC8Exw1UQ67puFl4TR4gkHECY4Qq1Ifb4KdVsNstUH4sDZHN+cDAcFr8VxGdB/RReEcc/DRIc4COh/yW8IN6ltXvEJ0EamCFCQi3dkvgeFtrYfZdaWpGEPXAZQWvxek6pVrKqyFO6EZyQYIw9ynlRkgVBFsT8bI8YwDaH1UnWoCjmMeliadULEKcbuGRI9iPCTObS5k3dBYN3k07b0OsXYEruUzY+Dywc/b93puBPIuijTA6nG+zOY65g0HVqTfkFc1JVm+mkl2MAAAAASUVORK5CYII=);
     }
     @media (min-width:320px) and (max-width:767px) {
       body {
@@ -176,7 +163,7 @@
       }
     }
 
-    .footer {
+    /*.footer {
       position: absolute;
       width: 100%;
       height: 12px;
@@ -186,12 +173,14 @@
     .footer a {
       font-size: 13px;
       color: #ccc;
-    }
+    }*/
   </style>
+
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 </head>
 <body>
   <div class="header">
-    <span class="avatar"></span>
+    <amp-img class="avatar" src="./images/avatar.jpg" alt="nswbmw" width="100" height="100"></amp-img>
     <h1><span>Hello, I am </span>nswbmw</h1>
     <div class="desc">
       <a href="https://apps.apple.com/cn/developer/id1369823343" target="_blank">独立开发者</a> · <a href="http://xn--tfs117j.cn/" target="_blank">《木莺》</a> ·<a href="https://item.jd.com/11778251.html" target="_blank">《Node.js 实战（1、2）》</a>·<a href="https://github.com/nswbmw/node-in-debugging" target="_blank">《Node.js 调试指南》</a>
@@ -200,24 +189,29 @@
     </div>
   </div>
 
-  <url class="contact">
-    <li><a href="https://github.com/nswbmw" target="_blank"><span class="github"></span></a></li>
-    <li><a href="https://twitter.com/nswbmw" target="_blank"><span class="twitter"></span></a></li>
-    <li><a href="https://www.zhihu.com/people/nswbmw" target="_blank"><span class="zhihu"></span></a></li>
-    <li><a href="http://music.163.com/#/user/home?id=9762218"  target="_blank"><span class="netease"></span></a></li>
-    <li><a href="mailto:nswbmw1992@gmail.com" target="_blank"><span class="email"></span></a></li>
-  </url>
+  <ul class="contact">
+    <li><a href="https://github.com/nswbmw" target="_blank"><amp-img src="./images/github.jpg" alt="GitHub" width="24" height="24"></amp-img></a></li>
+    <li><a href="https://twitter.com/nswbmw" target="_blank"><amp-img src="./images/twitter.jpg" alt="Twitter" width="24" height="24"></amp-img></a></li>
+    <li><a href="https://www.zhihu.com/people/nswbmw" target="_blank"><amp-img src="./images/zhihu.jpg" alt="Zhihu" width="24" height="24"></amp-img></span></a></li>
+    <li><a href="http://music.163.com/#/user/home?id=9762218" target="_blank"><amp-img src="./images/netease.jpg" alt="NetEase" width="24" height="24"></amp-img></span></a></li>
+    <li><a href="mailto:nswbmw1992@gmail.com" target="_blank"><amp-img src="./images/email.jpg" alt="Email" width="24" height="24"></amp-img></a></li>
+  </ul>
 
-  <div class="footer">
+  <!-- div class="footer">
     <a href="http://www.beian.miit.gov.cn">京ICP备16034766号</a>
-  </div>
+  </div> -->
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113558994-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-113558994-1');
+  <amp-analytics type="gtag" data-credentials="include">
+  <script type="application/json">
+  {
+    "vars" : {
+      "gtag_id": "UA-113558994-1",
+      "config" : {
+        "UA-113558994-1": { "groups": "default" }
+      }
+    }
+  }
   </script>
+  </amp-analytics>
 </body>
 </html>
